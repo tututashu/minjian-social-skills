@@ -19,11 +19,19 @@
 
 ## 安装
 
-### WorkBuddy
-把技能目录复制到 `~/.workbuddy/skills/`，重启会话生效。
+### 一句话安装（macOS / Linux）
 
-### Claude Code / Claude Desktop
-把技能目录复制到 `~/.claude/skills/`（或项目 `.claude/skills/`），SKILL.md 含 frontmatter，符合 Agent Skills 规范。
+```bash
+curl -fsSL https://raw.githubusercontent.com/tututashu/minjian-social-skills/main/install.sh | bash
+```
+
+自动探测已存在的 `~/.claude/skills` 或 `~/.workbuddy/skills` 并安装全部 6 个技能；想指定目录：`TARGET_DIR=~/.claude/skills bash install.sh`。
+
+### 手动安装
+
+把技能目录复制到对应 skills 目录：
+- **WorkBuddy**：`~/.workbuddy/skills/`
+- **Claude Code / Claude Desktop**：`~/.claude/skills/`（或项目 `.claude/skills/`）
 
 ## 使用示例
 
